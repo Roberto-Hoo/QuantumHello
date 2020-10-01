@@ -45,7 +45,8 @@
             Reset(q);
             Y(q);
             H(q);
-            Message("H(Y(q))=(|0>-|1>)/sqrt(2); a fase do estado |1> é pi radianos");
+            Message("H(Y(q))= i(|0>-|1>)/sqrt(2);");
+            Message(" a fase do estado |0> é pi/2 radianos e a fase de |1> é -pi/2 radianos");
             DumpMachine();
             Reset(q);
             return ResultadoDaMedida;
