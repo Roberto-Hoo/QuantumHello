@@ -3,21 +3,10 @@
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Diagnostics;
     open Microsoft.Quantum.Measurement;
-    
-   
-   // operation TestInterference2() : Unit {
-   //     using (q = Qubit()) {
-   //         X(q);
-   //         H(q);
-   //         DumpMachine();
-   //         Reset(q);
-   //     }
-   // }
-
-    
+        
     @EntryPoint()
     operation TestInterference1() : Result {
-        using (q = Qubit()) {
+    using (q = Qubit()) {
             Message(" ");
             Message("At the beginning the qubit is in the state |0>.");
             DumpMachine();
