@@ -19,7 +19,15 @@
             return ResultadoDaMedida;
        }
 	 }
-
+    /// # Summary
+	 /// 
+	 /// 
+	 /// # Input
+	 /// ## alpha
+	 /// 
+	 /// 
+	 /// # Output
+	 /// 
 	 operation GenerateRandomBit(alpha : Double) : Result {
         // Allocate a qubit.
         using (QuantumBit = Qubit()) {
@@ -33,7 +41,18 @@
             return ResultadoDaMedida;
         }
 	 }
-
+    /// # Summary
+    /// 
+    /// 
+    /// # Input
+    /// ## min
+    /// 
+    /// 
+    /// ## max
+    /// 
+    /// 
+    /// # Output
+    /// 
     operation SampleRandomNumberInRange(min :Int, max : Int) : Int {
         mutable output = 0; 
         repeat {
@@ -46,8 +65,13 @@
         
         return output;
     }
-
+    
     @EntryPoint()
+    /// # Summary
+    /// 
+    /// 
+    /// # Output
+    /// 
     operation TesteGerandoEstadoEspecifico() : Result {
         mutable output = 0; 
         let ProbabilidadeEstadoZero = 0.9;        
