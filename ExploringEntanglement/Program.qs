@@ -9,7 +9,7 @@
         using (qubits = Qubit[2]) {
             Message("Estado inicial:");
 			   DumpMachine();
-            H(qubits[1]);
+            H(qubits[0]);
             Message("\nAplicada Hadamard no 1° qbit");
             DumpMachine();
             CNOT(qubits[0], qubits[1]);
