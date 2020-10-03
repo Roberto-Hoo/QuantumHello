@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExploringInterference", "Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExploringInterference3", "ExploringInterference3\ExploringInterference3.csproj", "{05AF44C5-89E6-400B-A6FC-D66626F88395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploringEntanglement", "ExploringEntanglement\ExploringEntanglement.csproj", "{8C1B0FAB-14FC-4CD4-AC83-00C290FBDF47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExploringEntanglement", "ExploringEntanglement\ExploringEntanglement.csproj", "{8C1B0FAB-14FC-4CD4-AC83-00C290FBDF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1B_TarefaFinal03Out2020", "T1B_TarefaFinal03Out2020\T1B_TarefaFinal03Out2020.csproj", "{4FD271D2-5ED7-41EF-A2A5-0EB8491B63FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{8C1B0FAB-14FC-4CD4-AC83-00C290FBDF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1B0FAB-14FC-4CD4-AC83-00C290FBDF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1B0FAB-14FC-4CD4-AC83-00C290FBDF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD271D2-5ED7-41EF-A2A5-0EB8491B63FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD271D2-5ED7-41EF-A2A5-0EB8491B63FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD271D2-5ED7-41EF-A2A5-0EB8491B63FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD271D2-5ED7-41EF-A2A5-0EB8491B63FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
