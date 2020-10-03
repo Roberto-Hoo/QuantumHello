@@ -9,15 +9,15 @@
         using (qbit = Qubit[3]) {
             Message("Estado inicial:");
 			   DumpMachine();
+            Message("\nColocado o qubit[2] no estado sqrt(3) determinado");
+				Rx(2.0 * ArcCos(Sqrt(alfa)), qbit[2]);
+            DumpMachine(); 
             H(qbit[0]);
             Message("\nAplicada Hadamard no qbit[0]");
             DumpMachine();
             H(qbit[1]);
             Message("\nAplicada Hadamard no qbit[1]");
-            DumpMachine();
-            Message("\nColocado o qubit[2] em um estado determinado");
-				Rx(2.0 * ArcCos(Sqrt(alfa)), qbit[2]);
-            DumpMachine();   
+            DumpMachine();             
             CNOT(qbit[0], qbit[1]);
             Message("\nAplicando a porta CNOT nos qbit(0) e qbit(1)");
             DumpMachine();
