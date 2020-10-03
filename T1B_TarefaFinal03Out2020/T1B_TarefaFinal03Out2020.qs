@@ -9,7 +9,7 @@
         using (qbit = Qubit[3]) {
             Message("Estado inicial:");
 			   DumpMachine();
-            Message("\nColocado o qubit[2] no estado sqrt(3) determinado");
+            Message("\nColocado o qubit[2] no estado sqrt(0.3)|0> + sqrt(0.7)|1>");
 				Rx(2.0 * ArcCos(Sqrt(alfa)), qbit[2]);
             DumpMachine(); 
             H(qbit[0]);
