@@ -1,12 +1,8 @@
 ﻿namespace ExploringEntanglement {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Canon;  open Microsoft.Quantum.Intrinsic;
+    open Microsoft.Quantum.Diagnostics;  open Microsoft.Quantum.Measurement;
+    open Microsoft.Quantum.Math;  open Microsoft.Quantum.Convert;
     
-
     @EntryPoint()
     operation TestEntanglement1() : Result {
         let alfa = 0.3;       
@@ -27,14 +23,10 @@
             DumpMachine();
             CCNOT(qbit[0], qbit[1],qbit[2]);
             Message("\nAplicando a porta CNOT nos qbit(0), qbit(1) e qbit(3)");
-            DumpMachine();
-                    
-            Message(" ");
+            DumpMachine();          
             let resultado = MResetZ(qbit[2]);
-            Message("Estado após a medição:");
-            DumpMachine();
-            Reset(qbit[0]);
-            Reset(qbit[1]);
+            Message("\nEstado após a medição:");
+            DumpMachine(); Reset(qbit[0]); Reset(qbit[1]);
             return resultado;
         }
     }
