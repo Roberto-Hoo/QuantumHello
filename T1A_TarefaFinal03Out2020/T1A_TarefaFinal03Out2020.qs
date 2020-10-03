@@ -12,13 +12,13 @@
             let alfa = 0.4;
             Message("Estado inicial:");
 			   DumpMachine();
+            
+            Message("\nColocado o qubit[1] no estado sqrt(0.4)|0> + sqrt(0.6)|1> ");
+				Ry(2.0 * ArcCos(Sqrt(alfa)), qbit[1]);
+            DumpMachine();
 
             H(qbit[0]);
             Message("\nAplicada Hadamard no qbit(0)");
-            DumpMachine();
-
-            Message("\nColocado o qubit[1] em um estado determinado");
-				Ry(2.0 * ArcCos(Sqrt(alfa)), qbit[1]);
             DumpMachine();
             
             CNOT(qbit[0], qbit[1]);
